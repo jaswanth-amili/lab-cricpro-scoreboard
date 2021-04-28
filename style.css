@@ -1,16 +1,101 @@
-/* Type your code here */
+*{
+	padding: 0;
+	margin: 0;
+	font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+	/* font: inherit; */
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing:border-box;
+	text-align: left;
+}
 
+body{
+	background-image: url("./assets/background-image1.png");
+	background-repeat: no-repeat;
+	background-size: 75%;
+	background-position: right bottom;
+	background-attachment: fixed;
+	background-blend-mode: lighten ;
+	/* background-position: center; */
+	margin: 3em 6em;
+	font-size: 22px;
+}
 
 /* change the font family and spacing as per your project font */
 .footer{
-    display:flex;
-    flex-direction: row;
-    align-content: flex-end;
-	position: relative;
-	top: 750px;
-	margin-left: 80px;
-	font-size: 18px;
+	margin: 2em 0em;
 	font-family: Nunito Sans;
-    font-style: normal;
-    
+    font-style: normal;    
+}
+
+#logo{
+	float: right;
+	width: 10em;
+	position: absolute;
+	top: 1.2em;
+	right: 3em;
+}
+
+h1{
+	font-size: 3em;
+	text-shadow: 0px 2px 6px #7e7e7e;
+}
+
+#versus{
+	font-weight: 600;
+	font-size: 1.4em;
+	color: #7e7e7e;
+}
+
+/* Table styling */
+table{
+	margin-top: 2em;
+	background-color: #fefefe;
+	border-collapse: collapse;
+	width: auto;
+	box-shadow: 1px 1px 10px 3px rgba(153, 151, 151, 0.262);
+}
+
+th:nth-child(6),td:nth-child(7),#total{
+	text-align: right;
+	padding-left: 0;
+}
+
+tr:nth-child(-n+8) > td:nth-child(2){
+	color:#929191;
+	font-size: 0.9em;
+	padding: 0 6em;
+}
+
+#notBat{
+	padding-left: 5em;
+}
+
+tr{
+	border-bottom: 1px solid #d8c8c5;
+}
+
+th, td{
+	padding: 0.6em 1em;
+}
+
+#tableScore{
+	background-color: #f05237;
+	color: #fefefe;
+	width: 100%;
+	padding: 1em 1fr;
+}
+
+a{
+	text-decoration: none;
+	font-size: 0.9em;
+}
+
+popup{	
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
